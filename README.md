@@ -41,7 +41,38 @@
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+- **fork**: Es una copia del repositorio original en mi cuenta de GitHub. Se hace desde la interfaz web de GitHub. Me permite trabajar de forma independiente sin afectar el repositorio original.
 
+- **git clone**: Es la descarga del repositorio (en este caso mi fork) al equipo local. Se ejecuta desde la terminal y crea una carpeta con todos los archivos y el historial de commits.
+
+- **git pull**: Descarga y fusiona los cambios del repositorio remoto hacia el repositorio local. Se usa para mantener actualizado el repositorio local con los últimos cambios del remoto.
+
+
+### Proceso seguido
+
+**¿Cómo se realizó el fork?**  
+Ingresé al repositorio original en GitHub, hice clic en el botón "Fork" en la esquina superior derecha, seleccioné mi cuenta personal y GitHub creó una copia del repositorio en mi cuenta.
+
+**¿Cómo se realizó el clone del fork?**  
+Desde la terminal ejecuté:
+```bash
+git clone https://github.com/EMILIOABRIL05/EVALUACION_1P.git
+cd EVALUACION_1P
+```
+
+**¿Cómo se verificó que se trabajaba sobre el fork y no sobre el repositorio original?**  
+Ejecuté el siguiente comando y verifiqué que la URL apunta a mi cuenta de GitHub:
+```bash
+git remote -v
+```
+La salida mostró:
+```
+origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (fetch)
+origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (push)
+```
+
+![fork](FORK.png)
+![Pregunta 1](PRE1.png)
 ---
 
 ## Pregunta 2 (1 punto)

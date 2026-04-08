@@ -95,7 +95,22 @@ origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (push)
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+**📝 Respuesta:**
 
+### ¿Qué es `.gitignore`?
+El archivo `.gitignore` le indica a Git qué archivos o carpetas debe ignorar y no rastrear. Es útil para excluir archivos temporales, logs, o configuraciones locales que no deben subirse al repositorio.
+
+### Reglas configuradas:
+- `*.log` → ignora todos los archivos con extensión `.log`
+- `temp/` → ignora la carpeta `temp/` y todo su contenido
+- `doc/*.md` y `doc/*.txt` → ignora archivos `.md` y `.txt` dentro de la carpeta `doc/`
+
+### Evidencia:
+Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no aparecen** en los archivos sin rastrear, confirmando que `.gitignore` funciona correctamente. Los archivos `prueba.md` y `prueba.txt` fuera de `doc/` sí son rastreados.
+
+
+![EDICION GITIGNORE](PREG2.png)
+![Pregunta 2](PRE2_1.png)
 ---
 
 ## Pregunta 3 (2 puntos)

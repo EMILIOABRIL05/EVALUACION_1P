@@ -70,8 +70,8 @@ origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (fetch)
 origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (push)
 ```
 
-![Evidencia de Fork](images/PREG1.png)
-![Evidencia de Clone y Remote](images/PREG1_1.png)
+![Evidencia de Fork](images/FORK.png)
+![Evidencia de Clone y Remote](images/PRE1.png)
 
 
 ## Pregunta 2 (1 punto)
@@ -108,7 +108,7 @@ El archivo `.gitignore` le indica a Git qué archivos o carpetas debe ignorar y 
 Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no aparecen** en los archivos sin rastrear, confirmando que `.gitignore` funciona correctamente. Los archivos `prueba.md` y `prueba.txt` fuera de `doc/` sí son rastreados.
 
 
-![Configuración de gitignore](images/PREG2.png)
+![Configuración de gitignore](images/PRE2.png)
 ![Prueba de archivos ignorados](images/PREG2_1.png)
 ---
 
@@ -187,7 +187,7 @@ Git Flow organiza el trabajo en ramas bien definidas, lo que facilita el desarro
 - Un resumen del procedimiento realizado con las respectivas preguntas y capturas.
 - El número y enlace al pull request.
 
-**📝 Respuesta:**
+
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
 **📝 Respuesta:**
@@ -203,6 +203,14 @@ Porque permite detectar errores, inconsistencias o mejoras antes de que el códi
 - Que siga las convenciones del proyecto.
 - Que no genere conflictos con otras ramas.
 - Que esté bien documentado.
+
+### Evidencia:
+
+- [PR #1](https://github.com/EMILIOABRIL05/EVALUACION_1P/pull/1)
+
+![Commit y push en develop](images/PRE4.png)
+![Pull request y comentarios](images/PRE4_1.png)
+![Repositorio después del merge](images/PREG4_2.png)
 ---
 
 ## Pregunta 5 (2 puntos)
@@ -235,7 +243,25 @@ Porque permite detectar errores, inconsistencias o mejoras antes de que el códi
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 5 -->
+**📝 Respuesta:**
 
+### Procedimiento realizado:
+
+- **Creación de ramas:** Se crearon las ramas `ramaA` y `ramaB` a partir de la rama `develop` para simular trabajo en paralelo.
+- **Generación del conflicto:** Se creó el archivo `archivoA.txt` en ambas ramas con contenido diferente. Al intentar fusionar `ramaB` dentro de `ramaA`, Git detectó cambios divergentes en la misma línea del mismo archivo, deteniendo el merge automático.
+- **Resolución:** Se editó el archivo manualmente para combinar ambos contenidos, se marcó como resuelto con `git add` y se finalizó el commit del merge.
+- **Limpieza:** Se integraron los cambios finales en la rama `develop` y se eliminaron las ramas temporales para mantener el repositorio organizado.
+
+### Definición de Conflicto en Git:
+
+Un conflicto ocurre cuando Git no puede reconciliar automáticamente las diferencias entre dos commits que se están fusionando. Generalmente sucede cuando dos ramas modifican la misma línea de un archivo o cuando un archivo es eliminado en una rama pero editado en otra. En este caso, el conflicto fue de contenido, ya que el archivo `archivoA.txt` contenía datos distintos en la misma posición en ambas ramas.
+
+**Enlace al Pull Request:** [PR #2](https://github.com/EMILIOABRIL05/EVALUACION_1P/pull/2)
+
+![Conflicto generado en terminal](images/PREG5.png)
+![Conflicto visible en el archivo](images/PRE5_1.png)
+![Resolución manual del conflicto](images/PREG5_3.png)
+![Cierre del flujo y push de tags](images/PREG5_4.png)
 ---
 
 ## Pregunta 6 (2 puntos)
@@ -261,3 +287,25 @@ Porque permite detectar errores, inconsistencias o mejoras antes de que el códi
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 6 -->
+**📝 Respuesta:**
+
+### Explicación del proceso paso a paso:
+
+1. **Sincronización y Limpieza:** Se regresó a la rama `develop` para eliminar los archivos `archivoA.txt` y `archivoB.txt` mediante `git rm`, asegurando que el repositorio final solo contenga el código necesario.
+2. **Fusión de Ramas:** Se realizó un merge de `develop` hacia `main` de forma local para consolidar todas las respuestas y evidencias del examen en la rama principal.
+3. **Despliegue Remoto:** Se utilizó el comando `git push origin main:develop --tags` para actualizar el repositorio remoto, asegurando que los 6 tags de la evaluación sean visibles en GitHub.
+4. **Entrega Final:** Se generó un Pull Request desde mi fork hacia el repositorio original para la calificación definitiva.
+
+### Versionamiento Semántico (SemVer)
+
+Es un sistema de numeración estandarizado que ayuda a entender el impacto de los cambios en una aplicación. Se compone de tres números: `MAJOR.MINOR.PATCH`.
+
+- **MAJOR (Mayor):** Se incrementa cuando se realizan cambios que rompen la compatibilidad con versiones anteriores (cambios críticos).
+- **MINOR (Menor):** Se incrementa cuando se añaden nuevas funcionalidades que son compatibles con las versiones previas.
+- **PATCH (Parche):** Se incrementa para corregir errores menores (bugs) que no afectan la funcionalidad general.
+
+**Enlace al Pull Request:** [PR Final (#3)](https://github.com/EMILIOABRIL05/EVALUACION_1P/pull/3)
+
+![Limpieza y merge en terminal](images/PREG6.png)
+![Edición del mensaje de merge](images/Captura%20de%20pantalla%202026-04-08%20194925.png)
+![Merge final y push de tags](images/Captura%20de%20pantalla%202026-04-08%20195116.png)

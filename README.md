@@ -1,11 +1,10 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
-### Carrera de [Nombre de la Carrera]  
+# Universidad [nombre de tu universidad]
+## Facultad [nombre de tu facultad]
+### Carrera [nombre de tu carrera]
 
-**Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
-
+**Asignatura:** Manejo y Configuración de Software
+**Nombre del Estudiante:** Emilio Abril
+**Fecha:** 08/04/2026
 ---
 
 # Evaluación Práctica de Git y GitHub

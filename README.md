@@ -1,11 +1,10 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
-### Carrera de [Nombre de la Carrera]  
+# Universidad [nombre de tu universidad]
+## Facultad [nombre de tu facultad]
+### Carrera [nombre de tu carrera]
 
-**Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
-
+**Asignatura:** Manejo y Configuración de Software
+**Nombre del Estudiante:** Emilio Abril
+**Fecha:** 08/04/2026
 ---
 
 # Evaluación Práctica de Git y GitHub
@@ -40,7 +39,7 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+
 - **fork**: Es una copia del repositorio original en mi cuenta de GitHub. Se hace desde la interfaz web de GitHub. Me permite trabajar de forma independiente sin afectar el repositorio original.
 
 - **git clone**: Es la descarga del repositorio (en este caso mi fork) al equipo local. Se ejecuta desde la terminal y crea una carpeta con todos los archivos y el historial de commits.
@@ -71,9 +70,9 @@ origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (fetch)
 origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (push)
 ```
 
-![fork](FORK.png)
-![Pregunta 1](PRE1.png)
----
+![Evidencia de Fork](images/PREG1.png)
+![Evidencia de Clone y Remote](images/PREG1_1.png)
+
 
 ## Pregunta 2 (1 punto)
 
@@ -109,8 +108,8 @@ El archivo `.gitignore` le indica a Git qué archivos o carpetas debe ignorar y 
 Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no aparecen** en los archivos sin rastrear, confirmando que `.gitignore` funciona correctamente. Los archivos `prueba.md` y `prueba.txt` fuera de `doc/` sí son rastreados.
 
 
-![EDICION GITIGNORE](PREG2.png)
-![Pregunta 2](PRE2_1.png)
+![Configuración de gitignore](images/PREG2.png)
+![Prueba de archivos ignorados](images/PREG2_1.png)
 ---
 
 ## Pregunta 3 (2 puntos)
@@ -137,10 +136,31 @@ Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no a
 - **Solo el commit final** debe llevar el **tag `"Pregunta 3"`**.
 - El flujo debe respetar la estructura de Git Flow con las ramas `develop` y `main`.
 
+
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+### Comandos utilizados:
+```bash
+git flow init
+git flow feature start ingresar-encabezado
+# se completó el encabezado del README
+git add README.md
+git commit -m "Pregunta 3: completar encabezado con datos personales"
+git flow feature finish ingresar-encabezado
+```
 
+### Proceso seguido:
+1. Se inicializó Git Flow con `git flow init`, definiendo `main` como rama de producción y `develop` como rama de desarrollo.
+2. Se creó la rama `feature/ingresar-encabezado` con `git flow feature start`.
+3. Se completó el encabezado del README con los datos personales.
+4. Se cerró la feature con `git flow feature finish`, lo que fusionó los cambios hacia `develop` automáticamente.
+
+### Ventajas de Git Flow:
+Git Flow organiza el trabajo en ramas bien definidas, lo que facilita el desarrollo paralelo sin afectar la rama principal. En proyectos colaborativos permite que varios desarrolladores trabajen en features distintas simultáneamente, y en proyectos largos mantiene un historial limpio separando desarrollo, funcionalidades y producción.
+
+<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+![Encabezado completado](images/PREG3.png)
+![Terminal Git Flow Feature](images/PREG3_1.png)
 ---
 
 ## Pregunta 4 (2 puntos)
@@ -170,7 +190,19 @@ Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no a
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+**📝 Respuesta:**
 
+### ¿Qué es un Pull Request?
+Un Pull Request (PR) es una solicitud para fusionar los cambios de una rama hacia otra dentro de un repositorio. En un flujo colaborativo permite que otros desarrolladores revisen el código antes de que sea integrado a la rama principal.
+
+### ¿Por qué es importante revisarlo antes de fusionarlo?
+Porque permite detectar errores, inconsistencias o mejoras antes de que el código llegue a producción. Evita introducir bugs en la rama principal y garantiza que el código cumpla con los estándares del equipo.
+
+### ¿Qué validaciones se realizan en la revisión?
+- Que el código funcione correctamente.
+- Que siga las convenciones del proyecto.
+- Que no genere conflictos con otras ramas.
+- Que esté bien documentado.
 ---
 
 ## Pregunta 5 (2 puntos)

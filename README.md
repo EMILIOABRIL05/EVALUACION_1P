@@ -190,7 +190,19 @@ Git Flow organiza el trabajo en ramas bien definidas, lo que facilita el desarro
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+**📝 Respuesta:**
 
+### ¿Qué es un Pull Request?
+Un Pull Request (PR) es una solicitud para fusionar los cambios de una rama hacia otra dentro de un repositorio. En un flujo colaborativo permite que otros desarrolladores revisen el código antes de que sea integrado a la rama principal.
+
+### ¿Por qué es importante revisarlo antes de fusionarlo?
+Porque permite detectar errores, inconsistencias o mejoras antes de que el código llegue a producción. Evita introducir bugs en la rama principal y garantiza que el código cumpla con los estándares del equipo.
+
+### ¿Qué validaciones se realizan en la revisión?
+- Que el código funcione correctamente.
+- Que siga las convenciones del proyecto.
+- Que no genere conflictos con otras ramas.
+- Que esté bien documentado.
 ---
 
 ## Pregunta 5 (2 puntos)

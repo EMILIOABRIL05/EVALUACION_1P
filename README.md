@@ -70,8 +70,8 @@ origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (fetch)
 origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (push)
 ```
 
-![fork](FORK.png)
-![Pregunta 1](PRE1.png)
+![Evidencia de Fork](images/PREG1.png)
+![Evidencia de Clone y Remote](images/PREG1_1.png)
 
 
 ## Pregunta 2 (1 punto)
@@ -108,8 +108,8 @@ El archivo `.gitignore` le indica a Git qué archivos o carpetas debe ignorar y 
 Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no aparecen** en los archivos sin rastrear, confirmando que `.gitignore` funciona correctamente. Los archivos `prueba.md` y `prueba.txt` fuera de `doc/` sí son rastreados.
 
 
-![EDICION GITIGNORE](PRE2.png)
-![Pregunta 2](PREG2_1.png)
+![Configuración de gitignore](images/PREG2.png)
+![Prueba de archivos ignorados](images/PREG2_1.png)
 ---
 
 ## Pregunta 3 (2 puntos)
@@ -136,10 +136,31 @@ Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no a
 - **Solo el commit final** debe llevar el **tag `"Pregunta 3"`**.
 - El flujo debe respetar la estructura de Git Flow con las ramas `develop` y `main`.
 
+
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+### Comandos utilizados:
+```bash
+git flow init
+git flow feature start ingresar-encabezado
+# se completó el encabezado del README
+git add README.md
+git commit -m "Pregunta 3: completar encabezado con datos personales"
+git flow feature finish ingresar-encabezado
+```
 
+### Proceso seguido:
+1. Se inicializó Git Flow con `git flow init`, definiendo `main` como rama de producción y `develop` como rama de desarrollo.
+2. Se creó la rama `feature/ingresar-encabezado` con `git flow feature start`.
+3. Se completó el encabezado del README con los datos personales.
+4. Se cerró la feature con `git flow feature finish`, lo que fusionó los cambios hacia `develop` automáticamente.
+
+### Ventajas de Git Flow:
+Git Flow organiza el trabajo en ramas bien definidas, lo que facilita el desarrollo paralelo sin afectar la rama principal. En proyectos colaborativos permite que varios desarrolladores trabajen en features distintas simultáneamente, y en proyectos largos mantiene un historial limpio separando desarrollo, funcionalidades y producción.
+
+<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+![Encabezado completado](images/PREG3.png)
+![Terminal Git Flow Feature](images/PREG3_1.png)
 ---
 
 ## Pregunta 4 (2 puntos)

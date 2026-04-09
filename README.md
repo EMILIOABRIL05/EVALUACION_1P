@@ -40,7 +40,7 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+
 - **fork**: Es una copia del repositorio original en mi cuenta de GitHub. Se hace desde la interfaz web de GitHub. Me permite trabajar de forma independiente sin afectar el repositorio original.
 
 - **git clone**: Es la descarga del repositorio (en este caso mi fork) al equipo local. Se ejecuta desde la terminal y crea una carpeta con todos los archivos y el historial de commits.
@@ -73,7 +73,7 @@ origin  https://github.com/EMILIOABRIL05/EVALUACION_1P.git (push)
 
 ![fork](FORK.png)
 ![Pregunta 1](PRE1.png)
----
+
 
 ## Pregunta 2 (1 punto)
 
@@ -109,8 +109,8 @@ El archivo `.gitignore` le indica a Git qué archivos o carpetas debe ignorar y 
 Al ejecutar `git status`, los archivos `doc/prueba.md` y `doc/prueba.txt` **no aparecen** en los archivos sin rastrear, confirmando que `.gitignore` funciona correctamente. Los archivos `prueba.md` y `prueba.txt` fuera de `doc/` sí son rastreados.
 
 
-![EDICION GITIGNORE](PREG2.png)
-![Pregunta 2](PRE2_1.png)
+![EDICION GITIGNORE](PRE2.png)
+![Pregunta 2](PREG2_1.png)
 ---
 
 ## Pregunta 3 (2 puntos)
